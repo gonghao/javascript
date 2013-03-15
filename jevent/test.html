@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test JEvent</title>
+    <script src="./jevent.js"></script>
+</head>
+<body>
+    <script>
+    (function() {
+        function Foo(name) {
+            this.name = name;
+        }
+        Foo.prototype = {
+            constructor: Foo,
+
+            say: function() {
+                this.fire('beforeSay');
+                console.log(this.name);
+                this.fire('afterSay');
+            }
+        };
+    })();
+    </script>
+</body>
+</html>

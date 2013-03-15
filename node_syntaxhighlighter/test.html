@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+</head>
+<body>
+    <pre class="brush: php; html-script: true">
+      <html>
+          <body>
+                  <div style="font-weight: bold"><?= str_replace("\n", "<br/>", $var) ?></div>
+                   
+                  <?
+                  /***********************************
+                   ** Multiline block comments
+                   **********************************/
+                   
+                  $stringWithUrl = "http://alexgorbatchev.com";
+                  $stringWithUrl = 'http://alexgorbatchev.com';
+                       
+                  ob_start("parseOutputBuffer");      // Start Code Buffering
+                  session_start();
+                  ?>
+              </body>
+          </html>
+    </pre>
+</body>
+</html>
